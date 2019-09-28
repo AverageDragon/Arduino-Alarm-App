@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alarmTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="Silent Alarm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:text="Silent Alarm" />
+
+    <View
+        android:id="@+id/overDiv"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:background="#3a3f47"
+        android:visibility="visible" />
+
+    <TimePicker
+        android:id="@+id/alarmTime"
+        android:layout_width="wrap_content"
+        android:layout_height="213dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:theme="@style/NumberPickerStyle"
+        android:timePickerMode="spinner" />
+
+    <View
+        android:id="@+id/underDiv"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:background="#3a3f47"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/vibrationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Vibration Levels"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#3498DB" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="20dp">
+
+        <ToggleButton
+            android:id="@+id/weakToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_btn_toggle"
+            android:padding="12dp"
+            android:text="Weak"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textOff="Weak"
+            android:textOn="Weak" />
+
+        <ToggleButton
+            android:id="@+id/mediumToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_btn_toggle"
+            android:checked="false"
+            android:padding="12dp"
+            android:text="ToggleButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textOff="Medium"
+            android:textOn="Medium" />
+
+        <ToggleButton
+            android:id="@+id/strongToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_btn_toggle"
+            android:checked="true"
+            android:padding="12dp"
+            android:text="ToggleButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textOff="Strong"
+            android:textOn="Strong" />
+    </TableRow>
+
+    <View
+        android:id="@+id/vibDiv"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="16dp"
+        android:background="#3a3f47"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:text="Test Alarm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ToggleButton
+        android:id="@+id/alarmOn"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/toggley"
+        android:text="ToggleButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textOff="Activate Alarm"
+        android:textOn="Ready to Sound" />
+
+    <Switch
+        android:id="@+id/bluetoothConnectedSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:clickable="false"
+        android:switchMinWidth="280dp"
+        android:text="Ping - " />
+
+</LinearLayout>
